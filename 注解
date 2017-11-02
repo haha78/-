@@ -1,1 +1,21 @@
-基本语法，注解处理器，
+概念：Annotation是一种应用于类、方法、参数、变量、构造器及包声明中的特殊修饰符。它是一种由JSR-175标准选择用来描述元数据的一种工具。
+定义注解：与接口定义类似，并且与其他任何Java接口一样，注解也会被编译成class文件
+标记注解：没有元素的注解
+元注解：描述注解的注解；就像元数据是描述数据的数据一样；
+    @Target:定义注解将用于什么地方（比如一个方法或者一个域）
+    @Retention：定义注解在哪一个级别可用，在源代码中，在class文件中，或者运行时
+注解的元素：和接口的方法类似，唯一的区别是可以为其制定默认值
+  元素组成：所有的基本类型、String、CLass\enum\Annotation\以上类型的数组
+定义格式：public @interface name{
+    public 类型 name();
+    public 类型 name() default "";
+  }
+  
+  注解是如何发挥其功能的：
+    注解处理器：Java提供了一个外部工具apt帮助程序员解析带有注解的Java源代码。
+   
+   
+   
+ 相关文章：http://www.importnew.com/10294.html
+      http://blog.csdn.net/zdp072/article/details/25558563  深入探索spring技术内幕(四): 剖析@Resource注解实现原理与注解注入
+
