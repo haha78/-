@@ -1,1 +1,8 @@
-final,static,public,private,protectecd,abstract,break,continue,
+final：表示修饰的类、方法、变量不可改变；修饰的变量可以赋值但是不能被改变，即只能被赋值一次；final修饰的形参在方法内部不能别调用，因为形参是在调用方法时由系统
+  根据传入的参数完成初始化
+  可以修饰类、方法、变量；
+  final修饰的引用类型的变量不能被重新赋值但这并不意味着其修饰的变量不能发生变化，比如：Person p = new Person() 我们可以多次调用setAge为p对象设置年龄，但是不能再使用p=new Person()
+static,
+abstract,
+public,private,protectecd,
+break,continue,
